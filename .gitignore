@@ -21,3 +21,17 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# exclude IntelliJ Idea/Eclipse project files
+.idea
+*.iml
+*.eml
+.classpath
+.project
+.settings
+
+# exclude binary files
+allure-results/
+target/
+classes/
+driver/

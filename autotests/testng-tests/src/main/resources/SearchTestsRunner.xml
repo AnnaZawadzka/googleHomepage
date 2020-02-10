@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Country Selection Page Tests" verbose="1" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="listeners.AlterSuiteListener"/>
+    </listeners>
+
+    <parameter name="environment" value="PROD"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Search Tests">
+        <classes>
+            <class name="tests.SearchTest"/>
+        </classes>
+    </test>
+</suite>
